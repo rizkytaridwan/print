@@ -4,6 +4,6 @@
 
 @layer components {
   .input-style {
-    @apply block w-full px-4 py-2 bg-slate-100 border border-transparent rounded-lg placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:bg-white transition;
+    @apply block w-full px-4 py-2 bg-gray-700 border border-transparent rounded-lg placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-violet-500 focus:bg-gray-600 transition;
   }
 }

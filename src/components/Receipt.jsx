@@ -24,7 +24,6 @@ const Receipt = forwardRef(({ invoiceData }, ref) => {
         <p>No: {invoiceNumber}</p>
         <p>Tgl: {new Date().toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' })}</p>
         <p>Kasir: {invoiceData.cashierName || 'Admin'}</p>
-        <p>Plgn: {invoiceData.customerName || 'Customer'}</p>
         <p>--------------------------</p>
       </div>
 
