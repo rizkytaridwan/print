@@ -1,0 +1,37 @@
+/* src/print-styles.css */
+@media print {
+  /* Sembunyikan semua elemen kecuali area cetak */
+  body * {
+    visibility: hidden;
+  }
+  
+  .print-area, .print-area * {
+    visibility: visible;
+  }
+  
+  /* Posisikan area cetak ke ujung kiri atas */
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 58mm; /* Pastikan lebar sesuai kertas */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hilangkan header & footer default dari browser */
+  @page {
+    size: 58mm auto; /* Atur ukuran kertas */
+    margin: 0mm; 
+  }
+}
+
+/* Kelas untuk menyembunyikan elemen saat print */
+.no-print {
+    display: block; /* atau flex, grid, dll. */
+}
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
